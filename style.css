@@ -20,6 +20,7 @@ body{
     margin: 80px auto 20px;
     padding: 40px 30px;
     border-radius: 10px;
+    box-shadow: #00000082 5px 5px 15px 15px;
 }
 .todolist h2 {
     background: -webkit-linear-gradient(rgb(37, 26, 121), rgb(192, 84, 225));
