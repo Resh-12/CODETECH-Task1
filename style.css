@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg, #0c3c9e 0%, #3b5998 40%, #7f0e9b 70%);
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #0c3c9e 0%, #3b5998 40%, #7f0e9b 70%); */
+    padding: 1px;
+}
+.todolist {
+    width: 80%;
+    max-width: 540px;
+    background: white;
+    margin: 80px auto 20px;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+.todolist h2 {
+    background: -webkit-linear-gradient(rgb(37, 26, 121), rgb(192, 84, 225));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e4e6e8;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+.row input {
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding:10px;
+    font-weight: 13px;
+    font-size: 18px;
+}
+.row .btn{
+    border: none;
+    outline: none;
+    background: #bd14bd;
+    border-radius: 30px;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: 200;
+    /* cursor: pointer; */
+    color: white;
+
+    }
+    .row .btn:hover{
+    border: none;
+    outline: none;
+    background:#a30ea3;
+    border-radius: 30px;
+    color:white;
+    padding: 15px 50px;
+    }
+
+    .list-box li{
+        list-style: none;
+       padding: 3px;
+        padding-left: 30px;
+        user-select: none;
+        position: relative;
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .list-box li::before{
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-image: url(unchecked.png);
+        background-position: center;
+        background-size: cover;
+        margin-right: 3px;
+        top:7px;
+        left:0;
+    }
+    .list-box li.check{
+        text-decoration: line-through;
+        color:rgb(102, 101, 101);
+    }
+    .list-box li.check::before{
+        background-image: url(checked.png);
+    }
+    .list-box li span{
+        position: absolute;
+        right:20px;
+        top:3px;
+        width: 30px;
+        height: 30px;
+        color: red;
+        font-weight: 350;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .list-box li span:hover{
+        background: #d9dadb;
+    }
