@@ -18,9 +18,11 @@
  listitem.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("check");
+        save();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
+        save();
     }
  },false);
  function save(){
